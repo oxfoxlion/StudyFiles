@@ -1,0 +1,120 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*從這邊開始往下寫*/
+
+.wrap{
+	width: 1100px; /*網站寬度*/
+	margin:0 auto;/*置中呈現*/
+	display: flex;/*改成flex排版*/
+	box-sizing: border-box;
+	/*將其下所有的寬高都與設定相同，
+	不依據padding或border的值變動*/
+}
+
+/*設定左方欄位*/
+.container1{
+	width: 400px; /*欄位寬度*/
+	padding-top: 72px;/*往內留白*/
+	background: #E7EEEA;/*設定顏色*/
+	display: flex;/*改成flex排版*/
+	flex-direction: column;/*重設flex方向*/
+}
+
+.container1 h1{
+	margin: 0 auto;
+}
+
+.container1 ul li a{
+	display: block;
+	font-size:28px; /*字體大小*/
+	color:#37523D; /*字體顏色*/
+	text-decoration: none; /*移除底線*/
+	line-height: 1; /*行高*/
+	padding-top: 18px; /*每一個li與上方的距離*/
+	padding-bottom: 18px;
+	text-align: center;
+}
+
+.container1 ul li a:hover{
+	color:#FFFFFF; /*字體顏色*/
+	background: #37523D;
+}
+
+/*設定右方內容*/
+.container2{
+	width: 594px; /*欄位寬度*/
+	padding-top: 72px;/*向內留白*/
+	margin-left: 94px; /*向左外推*/
+}
+
+.title{
+	font-size: 26px;
+	font-weight: bold;
+	color:#37523D;
+	line-height: 1;
+	margin-bottom: 36px;
+}
+
+.content{
+	font-size: 20px;
+	line-height: 1.5;
+	margin-bottom: 36px;
+}
+
+.item2{
+	display: flex;/*改成flex排版*/
+	flex-wrap:wrap;/*超過寬度自動換行*/
+	justify-content: space-between;/*依據主軸對齊*/
+	margin-bottom: 12px;
+}
+
+.pic{
+	margin-bottom: 3px;
+}

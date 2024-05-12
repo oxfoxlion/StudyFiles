@@ -1,0 +1,45 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    background:#364E3B;
+    width: 1170px;;
+}
+
+.item{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 268px;
+    background: #E7EEEA;
+    text-align: center;
+}
+
+.title h1{
+    font-size: 80px;
+    color:#37523D;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 268px;
+    background:white;
+    padding: 36px;
+}
+
+.content h2{
+    font-size: 28px;
+    color:#37523D;
+}
+
+.content p{
+    font-size: 20px;
+}
